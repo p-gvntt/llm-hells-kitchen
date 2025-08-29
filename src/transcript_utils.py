@@ -1,6 +1,6 @@
 import os
 from openai import OpenAI
-from .config import OPENAI_API_KEY, RAW_TRANSCRIPTS_DIR, PREPROCESSED_TRANSCRIPTS_DIR, DEFAULT_MODEL
+from config import OPENAI_API_KEY, RAW_TRANSCRIPTS_DIR, PREPROCESSED_TRANSCRIPTS_DIR, DEFAULT_MODEL
 
 def save_file(text, path):
     with open(path, "w", encoding="utf-8") as f:
