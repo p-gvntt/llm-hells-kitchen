@@ -82,11 +82,11 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
    pip install -r requirements.txt
    ```
 
-## 6. Configure environment
+6. **Configure environment**I
 
 Create a .env file in the project root and add the required environment variables:
 
-**# create the file**
+Create the env file
 ```bash
 touch .env
 ```
