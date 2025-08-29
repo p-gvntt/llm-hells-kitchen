@@ -2,7 +2,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load .env file
+env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "") # Load from .env or set directly
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")  # Default LLM or override in .env
