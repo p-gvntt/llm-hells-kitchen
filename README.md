@@ -53,20 +53,21 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
    pip install -r requirements.txt
    
    # Download the Food.com dataset (704MB)
-   # Visit: https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews
-   # Download recipes.csv and place in data/raw/recipes.csv
+   Visit: https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews
+   Download recipes.csv and place in data/raw/recipes.csv
    
    # REQUIRED: Generate preprocessed data and TF-IDF vectors
    python -c "from src.preprocessing import preprocess_and_save; preprocess_and_save()"
    python -c "from src.vectorizer import train_and_save_vectorizer; train_and_save_vectorizer()"
    
    # Verify setup - these files should exist:
-   # - data/preprocessed/recipes_processed.csv
+   # - data/raw/recipes.csv
+   # - data/preprocessed/final_recipes.csv.gzip
    # - models/tfidf_vectorizer.pkl  
    # - models/recipe_vectors.npy
    
    deactivate  # Exit ML Food Buddy environment
-   cd ../llm-hells-kitchen  # Return to Hell's Kitchen project
+   # Return to Hell's Kitchen project
    ```
 
 4. **Configure environment**
@@ -81,38 +82,29 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
    pip install -r requirements.txt
    ```
 
-6. **Configure environment**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your OpenAI API key
-   ```
+## 6. Configure environment
 
-7. **Set up ML Food Buddy (REQUIRED)**
-   ```bash
-   # Navigate to ML Food Buddy directory
-   cd ../ml-food-buddy-recommender
-   
-   # Download the dataset (704MB)
-   # Go to Food.com Recipes Dataset and download recipes.csv
-   # Place it in data/raw/recipes.csv
-   
-   # Install ML Food Buddy dependencies
-   pip install -r requirements.txt
-   
-   # CRITICAL: Run preprocessing and vectorization
-   python -c "from src.preprocessing import preprocess_and_save; preprocess_and_save()"
-   python -c "from src.vectorizer import train_and_save_vectorizer; train_and_save_vectorizer()"
-   
-   # Return to Hell's Kitchen project
-   cd ../llm-hells-kitchen
-   ```
+Create a .env file in the project root and add the required environment variables:
 
-8. **Launch the web app**
+**# create the file**
+```bash
+touch .env
+```
+
+Open .env in a text editor and add your variables. For example:
+```
+OPENAI_API_KEY=your_api_key_here
+DEFAULT_MODEL=gpt-4
+```
+
+Make sure to replace these values with the ones required for your project.
+
+7. **Launch the web app**
    ```bash
    streamlit run app/app.py
    ```
 
-9. **Or try the interactive demo**
+8. **Or try the interactive demo**
    ```bash
    jupyter notebook notebooks/HellKitchenChef_demo.ipynb
    ```
@@ -185,7 +177,7 @@ streamlit run app/app.py
 ### Jupyter Notebook
 
 ```bash
-# Launch interactive demo
+# Launch and run the interactive demo - to run the demo, open this notebook:
 jupyter notebook notebooks/HellKitchenChef_demo.ipynb
 
 # Follow the step-by-step tutorial to:
