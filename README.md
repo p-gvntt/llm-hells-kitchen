@@ -97,7 +97,7 @@ OPENAI_API_KEY=your_api_key_here
 DEFAULT_MODEL=gpt-4
 ```
 
-Make sure to replace these values with the ones required for your project.
+Make sure to replace these values with yours.
 
 7. **Launch the web app**
    ```bash
