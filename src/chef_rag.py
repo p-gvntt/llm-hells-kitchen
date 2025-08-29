@@ -1,6 +1,6 @@
 import os
 from openai import OpenAI
-from .config import OPENAI_API_KEY, PERSONAS_DIR, DEFAULT_MODEL
+from config import OPENAI_API_KEY, PERSONAS_DIR, DEFAULT_MODEL
 
 class HellKitchenChef:
     def __init__(self, model: str = None):
