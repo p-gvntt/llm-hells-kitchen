@@ -26,18 +26,18 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
 ### Installation
 
 1. **Check your environment**
-2. **Create virtual environment**bash
+   ```bash
    python3 --version  # Should be 3.8+
    pip3 --version
    ```
 
-3. **Clone the repository**
+2. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/llm-hells-kitchen.git
    cd llm-hells-kitchen
    ```
 
-4. **Set up the ML Food Buddy dependency (CRITICAL)**
+3. **Set up the ML Food Buddy dependency (CRITICAL)**
    ```bash
    # Clone the ML Food Buddy Recommender in the parent directory
    cd ..
@@ -69,25 +69,25 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
    cd ../llm-hells-kitchen  # Return to Hell's Kitchen project
    ```
 
-5. **Configure environment**
+4. **Configure environment**
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-6. **Install dependencies**
+5. **Install dependencies**
    ```bash
    pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
-7. **Configure environment**
+6. **Configure environment**
    ```bash
    cp .env.example .env
    # Edit .env with your OpenAI API key
    ```
 
-8. **Set up ML Food Buddy (REQUIRED)**
+7. **Set up ML Food Buddy (REQUIRED)**
    ```bash
    # Navigate to ML Food Buddy directory
    cd ../ml-food-buddy-recommender
@@ -107,12 +107,12 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
    cd ../llm-hells-kitchen
    ```
 
-9. **Launch the web app**
+8. **Launch the web app**
    ```bash
    streamlit run app/app.py
    ```
 
-10. **Or try the interactive demo**
+9. **Or try the interactive demo**
    ```bash
    jupyter notebook notebooks/HellKitchenChef_demo.ipynb
    ```
@@ -205,7 +205,7 @@ recipes = get_food_buddy_recommendations(
     query="healthy chicken dinner",
     time_pref="fast",      # fast/medium/long
     calorie_pref="low",    # low/medium/high
-    top_n=5
+    top_n=1
 )
 ```
 
@@ -341,4 +341,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **"Right, you muppet! Follow the bloody instructions and you might actually cook something decent!"** 🔥
 
-*Ready to get roasted by AI Gordon Ramsay? Fire up the notebook and buon appetito!* 👨‍🍳✨
+*Ready to get roasted by the best AI Hell's Kitchen Chef? Fire up the notebook and buon appetito!* 👨‍🍳✨
