@@ -10,7 +10,3 @@ DATA_DIR = "data"
 RAW_TRANSCRIPTS_DIR = os.path.join(DATA_DIR, "raw", "transcripts")
 PREPROCESSED_TRANSCRIPTS_DIR = os.path.join(DATA_DIR, "preprocessed", "transcripts")
 PERSONAS_DIR = os.path.join(DATA_DIR, "preprocessed", "personas")
-
-# Ensure folders exist
-for folder in [RAW_TRANSCRIPTS_DIR, PREPROCESSED_TRANSCRIPTS_DIR, PERSONAS_DIR]:
-    os.makedirs(folder, exist_ok=True)
