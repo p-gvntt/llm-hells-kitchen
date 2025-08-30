@@ -109,7 +109,7 @@ def reset_conversation():
     st.session_state.typing_complete = False
     st.session_state.typing_progress = 0
 
-def simulate_typing(text, speed=20):
+def simulate_typing(text, speed=50):
     """Simulate typing effect by displaying text character by character"""
     placeholder = st.empty()
     typed_text = ""
@@ -123,11 +123,11 @@ def simulate_typing(text, speed=20):
         # Update session state with progress
         st.session_state.typing_progress = i + 1
         
-        # Adjust speed for punctuation
+        # Adjust speed for punctuation - reduced delays for faster typing
         if char in ".!?":
-            time.sleep(0.5)
+            time.sleep(0.1) 
         elif char == ",":
-            time.sleep(0.2)
+            time.sleep(0.05) 
         else:
             time.sleep(1/speed)
     
@@ -176,7 +176,7 @@ def main():
             st.markdown(f"""
             <div class="chef-response">
                 <strong>Chef:</strong><br>
-                "Oi, you muppet! I hear you’re trying to cook something. Pathetic! Let me save your sorry attempt by actually suggesting some proper recipes. Now, cough up those ingredients before you ruin dinner, and I’ll show you how to turn that mess into something absolutely stunning — got it?"
+                "Oi, you muppet! I hear you're trying to cook something. Pathetic! Let me save your sorry attempt by actually suggesting some proper recipes. Now, cough up those ingredients before you ruin dinner, and I'll show you how to turn that mess into something absolutely stunning — got it?"
             </div>
             """, unsafe_allow_html=True)
             

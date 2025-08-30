@@ -100,7 +100,7 @@ Ingredients: {ingredients}
 Instructions: {instructions}
 
 Respond in character following this structure:
-1. First, criticize their choice with your typical attitude
+1. First, criticize their choice of ingredients, {user_query}, with your typical attitude.
 2. Then say: "But trust me, follow my instructions and you'll get a proper dish."
 3. Then say: "If you use all these ingredients: [list key ingredients], you're going to end up with something amazing. I was thinking about {recipe_name}."
 4. Finally, give the cooking instructions in your own words with your personality
