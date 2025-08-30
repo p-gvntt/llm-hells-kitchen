@@ -176,8 +176,7 @@ def main():
             st.markdown(f"""
             <div class="chef-response">
                 <strong>Chef:</strong><br>
-                "Hey buddy! I heard you want to cook some food. Let me help you by suggesting some recipe. 
-                Give me your ingredients that you are thinking about, and I'll show you how to turn them into something absolutely brilliant!"
+                "Oi, you muppet! I hear you’re trying to cook something. Pathetic! Let me save your sorry attempt by actually suggesting some proper recipes. Now, cough up those ingredients before you ruin dinner, and I’ll show you how to turn that mess into something absolutely stunning — got it?"
             </div>
             """, unsafe_allow_html=True)
             
