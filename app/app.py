@@ -81,7 +81,7 @@ def load_chef_image():
     try:
         # Try to get the image using a relative path
         current_dir = Path(__file__).parent if "__file__" in globals() else Path.cwd()
-        image_path = current_dir / "media" / "chef.webp"
+        image_path = current_dir / "picture" / "chef.webp"
         
         if image_path.exists():
             return Image.open(image_path)
@@ -89,7 +89,7 @@ def load_chef_image():
             # If not found, try an alternative approach
             try:
                 # Try one level up (if running from src)
-                image_path = current_dir.parent / "media" / "chef.webp"
+                image_path = current_dir.parent / "picture" / "chef.webp"
                 if image_path.exists():
                     return Image.open(image_path)
             except Exception:
