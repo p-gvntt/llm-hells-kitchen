@@ -1,12 +1,12 @@
-# Hell's Kitchen Chef 🔥👨‍🍳
+# Chef Inferno 🔥👨‍🍳
 
-An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen episodes into personalized recipe critiques. Using advanced NLP and the ML Food Buddy recommendation system, this project creates authentic chef personas from YouTube transcripts and delivers brutally honest (yet helpful) cooking advice.
+An AI-powered culinary experience that transforms a well-know celebrity chef into personalized recipe critiques. Using advanced NLP and the ML Food Buddy recommendation system, this project creates an authentic chef persona from a YouTube transcript and delivers brutally honest (yet helpful) cooking advice.
 
 ## ✨ Features
 
-- **Persona Generation**: Extracts Gordon Ramsay's personality from Hell's Kitchen transcripts using GPT-4
+- **Persona Generation**: Extracts a well-know celebrity chef's personality from a Youtube transcript using GPT-4
 - **Recipe Intelligence**: Integrates with ML Food Buddy's 500K+ recipe database
-- **Authentic Critique**: Delivers personalized cooking advice in Gordon's signature style
+- **Authentic Critique**: Delivers personalized cooking advice in Chef Inferno's signature style
 - **Smart Transcript Processing**: Automatically cleans and processes YouTube transcripts
 - **Persistent Personas**: Save and reuse chef personalities across sessions
 - **Interactive Web App**: Clean Streamlit interface for real-time chef critiques
@@ -33,8 +33,8 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
 
 2. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/llm-hells-kitchen.git
-   cd llm-hells-kitchen
+   git clone https://github.com/yourusername/llm-chef-inferno.git
+   cd llm-chef-inferno
    ```
 
 3. **Set up the ML Food Buddy dependency (CRITICAL)**
@@ -67,7 +67,7 @@ An AI-powered culinary experience that transforms Gordon Ramsay's Hell's Kitchen
    # - models/recipe_vectors.npy
    
    deactivate  # Exit ML Food Buddy environment
-   # Return to Hell's Kitchen project
+   # Return to Chef Inferno project
    ```
 
 4. **Configure environment**
@@ -106,13 +106,13 @@ Make sure to replace these values with yours.
 
 8. **Or try the interactive demo**
    ```bash
-   jupyter notebook notebooks/HellKitchenChef_demo.ipynb
+   jupyter notebook notebooks/chef_inferno_demo.ipynb
    ```
 
 ## 📁 Project Structure
 
 ```
-llm-hells-kitchen/
+llm-chef-inferno/
 ├── app/
 │   └── app.py                   # Streamlit web application
 ├── data/
@@ -125,9 +125,9 @@ llm-hells-kitchen/
 │   ├── index.html               # Demo documentation page
 │   └── media/                   # Demo videos and assets
 ├── notebooks/
-│   └── HellKitchenChef_demo.ipynb  # Interactive demo
+│   └── chef_inferno_demo.ipynb  # Interactive demo
 ├── src/
-│   ├── chef_rag.py             # Core HellKitchenChef class
+│   ├── chef_rag.py             # Core Chef Inferno class
 │   ├── chef_service.py         # End-to-end service orchestration
 │   ├── config.py               # Project configuration
 │   ├── food_buddy_api.py       # ML Food Buddy integration
@@ -145,7 +145,7 @@ llm-hells-kitchen/
 - Stores raw transcripts for reference and reprocessing
 
 ### 2. Persona Generation
-- Uses GPT-4 to analyze Gordon Ramsay's speaking patterns and personality
+- Uses GPT-4 to analyze a well-known celebrity chef's speaking patterns
 - Creates concise, authentic personality descriptions 
 - Captures speaking style, attitude, temperament, and reaction patterns
 - Saves personas for consistent reuse across sessions
@@ -158,7 +158,7 @@ llm-hells-kitchen/
 ### 4. Authentic Critique
 - Combines chef persona with recipe data using structured prompting
 - Generates responses that maintain character consistency
-- Follows Gordon's signature style: criticism → guidance → encouragement
+- Follows a well-known celebrity chef's signature style: criticism → guidance → encouragement
 
 ## 💻 Usage Examples
 
@@ -169,19 +169,19 @@ llm-hells-kitchen/
 streamlit run app/app.py
 
 # Then interact with the web interface:
-# 1. Enter a YouTube video ID (or use default Hell's Kitchen episode)
+# 1. Enter a YouTube video ID (or use default selected video)
 # 2. Type your recipe query (e.g., "pasta with chicken")
-# 3. Get authentic Gordon Ramsay critique in real-time
+# 3. Get authentic Chef Inferno critique in real-time
 ```
 
 ### Jupyter Notebook
 
 ```bash
 # Launch and run the interactive demo - to run the demo, open this notebook:
-jupyter notebook notebooks/HellKitchenChef_demo.ipynb
+jupyter notebook notebooks/chef_inferno_demo.ipynb
 
 # Follow the step-by-step tutorial to:
-# - Process Hell's Kitchen transcripts
+# - Process Youtube transcripts
 # - Generate chef personas
 # - Get recipe recommendations
 # - Experience authentic critiques
@@ -206,16 +206,16 @@ recipes = get_food_buddy_recommendations(
 ### Live Demo
 Open `docs/index.html` in your browser to view the complete video walkthrough showing:
 - Real-time transcript processing
-- Persona generation from Hell's Kitchen episodes
+- Persona generation from a Youtube video
 - Recipe recommendation integration
-- Authentic Gordon Ramsay critique generation
+- Authentic Chef Inferno critique generation
 
 ### Interactive Experience
 The Streamlit web app provides an intuitive interface where you can:
-- Input any Hell's Kitchen YouTube video ID
+- Input any YouTube video ID
 - Enter recipe queries in natural language
 - Watch as the AI processes transcripts and generates personas
-- Receive personalized cooking critiques in Gordon's signature style
+- Receive personalized cooking critiques in a well-known celebrity chef signature style
 
 ## 🎯 Key Components
 - **Persona Management**: Create, save, and load chef personalities
@@ -240,7 +240,7 @@ The Streamlit web app provides an intuitive interface where you can:
 
 ## 📊 Supported Video Sources
 
-The system works with any Hell's Kitchen episode available on YouTube with transcripts:
+The system works with any Youtube video available with transcripts:
 
 - **Season Episodes**: Full episode transcripts for comprehensive persona building
 - **Highlights**: Shorter clips focusing on specific cooking moments
@@ -269,7 +269,7 @@ This project **requires** the ML Food Buddy Recommender to be fully operational 
 ```bash
 # Required directory structure:
 parent_directory/
-├── llm-hells-kitchen/
+├── llm-chef-inferno/
 └── ml-food-buddy-recommender/
     ├── data/
     │   ├── raw/recipes.csv              # 704MB dataset
@@ -327,10 +327,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **OpenAI**: GPT models for persona generation and critique
 - **YouTube Transcript API**: Automated transcript extraction
 - **Food.com Dataset**: 500K+ recipes for recommendation training
-- **Gordon Ramsay**: Inspiration for authentic chef personalities
 
 ---
 
 **"Right, you muppet! Follow the bloody instructions and you might actually cook something decent!"** 🔥
 
-*Ready to get roasted by the best AI Hell's Kitchen Chef? Fire up the notebook and buon appetito!* 👨‍🍳✨
+*Ready to get roasted by the best AI celebrity Chef? Fire up the notebook and buon appetito!* 👨‍🍳✨

@@ -1,5 +1,5 @@
 from transcript_utils import clean_transcript_text
-from chef_rag import HellKitchenChef
+from chef_rag import ChefInferno
 from food_buddy_api import get_food_buddy_recommendations
 from youtube_transcript_api import YouTubeTranscriptApi
 from config import DEFAULT_MODEL
@@ -25,7 +25,7 @@ def generate_chef_response(video_id: str, user_query: str, model: str = None) ->
     cleaned_text = clean_transcript_text(raw_text, file_name, model=model)
 
     # Instantiate Chef
-    chef = HellKitchenChef(model=model)
+    chef = ChefInferno(model=model)
     persona = chef.load_persona(file_name) or chef.create_persona_from_transcript(
         cleaned_text, file_name, model=model
     )

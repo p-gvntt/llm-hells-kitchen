@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 from config import OPENAI_API_KEY, PERSONAS_DIR, DEFAULT_MODEL
 
-class HellKitchenChef:
+class ChefInferno:
     def __init__(self, model: str = None):
         self.client = OpenAI(api_key=OPENAI_API_KEY)
         self.model = model or DEFAULT_MODEL

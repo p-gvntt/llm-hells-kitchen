@@ -1,4 +1,4 @@
 # This directory contains AI-generated chef personality files
-# Run HellKitchenChef.create_persona_from_transcript() to generate:
+# Run ChefInferno.create_persona_from_transcript() to generate:
 # - {video_id}_persona.txt (e.g., mdqb3fVqZgM_persona.txt)
 # - Chef personality descriptions for authentic critiques

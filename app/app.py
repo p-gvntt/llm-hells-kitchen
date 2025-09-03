@@ -13,7 +13,7 @@ sys.path.append(str(src_path))
 
 # Local modules
 from transcript_utils import clean_transcript_text
-from chef_rag import HellKitchenChef
+from chef_rag import ChefInferno
 from chef_service import generate_chef_response
 from config import (
     YOUTUBE_VIDEO_ID,
@@ -25,7 +25,7 @@ from config import (
 
 # Page configuration
 st.set_page_config(
-    page_title="Hell's Kitchen Chef",
+    page_title="Chef Inferno Demo",
     page_icon="🔥",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -77,7 +77,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def load_chef_image():
-    """Load Hell's Kitchen Chef image with relative path"""
+    """Load Chef Inferno image with relative path"""
     try:
         # Try to get the image using a relative path
         current_dir = Path(__file__).parent if "__file__" in globals() else Path.cwd()
@@ -138,7 +138,7 @@ def simulate_typing(text, speed=50):
 # Main app
 def main():
     # Header
-    st.title("🔥 Hell's Kitchen Chef")
+    st.title("🔥 Chef Inferno")
     st.markdown("*Get cooking advice from our fiery chef!*")
     
     # Hidden configuration - use defaults
@@ -165,10 +165,10 @@ def main():
     with col1:
         chef_image = load_chef_image()
         if chef_image:
-            st.image(chef_image, caption="Hell's Kitchen Chef", width=200)
+            st.image(chef_image, caption="Chef Inferno", width=200)
         else:
             st.markdown("👨‍🍳")
-            st.caption("*Hell's Kitchen Chef*")
+            st.caption("*Chef Inferno*")
     
     with col2:
         if not st.session_state.conversation_started:
