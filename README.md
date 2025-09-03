@@ -1,6 +1,6 @@
 # Chef Inferno 🔥👨‍🍳
 
-An AI-powered culinary experience that transforms a well-know celebrity chef into personalized recipe critiques. Using advanced NLP and the ML Food Buddy recommendation system, this project creates authentic chef personas from YouTube transcripts and delivers brutally honest (yet helpful) cooking advice.
+An AI-powered culinary experience that transforms a well-know celebrity chef into personalized recipe critiques. Using advanced NLP and the ML Food Buddy recommendation system, this project creates an authentic chef persona from a YouTube transcript and delivers brutally honest (yet helpful) cooking advice.
 
 ## ✨ Features
 
