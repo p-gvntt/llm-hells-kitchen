@@ -328,6 +328,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **YouTube Transcript API**: Automated transcript extraction
 - **Food.com Dataset**: 500K+ recipes for recommendation training
 
+## ⚖️ Legal Disclaimer
+
+This project is for educational and portfolio demonstration purposes only. Users are responsible for:
+- Ensuring they have permission to process YouTube content
+- Complying with YouTube's Terms of Service  
+- Respecting celebrity personas and not using for commercial impersonation
+- Following applicable dataset licensing terms
+
+This is a personal portfolio project and not intended for commercial use.
+
 ---
 
 **"Right, you muppet! Follow the bloody instructions and you might actually cook something decent!"** 🔥
